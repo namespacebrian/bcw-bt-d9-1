@@ -9,10 +9,11 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v2
     - name: Install Terminus
-      uses: pantheon-systems/terminus-github-actions@v1
+      uses: pantheon-systems/terminus-github-actions@debug
       with:
         terminus-version: 4.0.1
         disable-cache: true
+        debug: true
     - name: Print System Details
       run: |
         php -v
